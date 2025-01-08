@@ -1,0 +1,115 @@
+<div class="landing-container">
+  <div class="background-picture">
+  <%= render 'shared/navbar' %>
+    <div class="ww-home-text d-flex justify-content-center align-items-center flex-column">
+      <h1 class="wanstead-wags-title text-center">Wanstead Wags</h1>
+      <h1 class="font text-center">PROFESSIONAL DOG WALKING, RUNNING AND SITTING SERVICES</h1>
+      <a href="/"><p class="text-center button font letter-spacing-5">BOOK TODAY</p></a>
+    </div>
+  </div>
+  <div class="green-background">
+    <div class="welcome-message">
+      <h1 class="welcome wanstead-wags-title titles" style="color: #40FFB5;">Welcome to<br>Wanstead Wags</h1>
+      <p class="text padding-text">At Wanstead Wags, we know the name’s a bit tongue-in-cheek—after all, we’re all about spoiled pups, not footballers’ wives!  Whether your dog is more of a chilled-out snoozer or a full-on bundle of energy, I’m here to make sure they get the perfect walk to suit their vibe. Take the stress off your busy day and let me handle the walking—check out my services and see how I can help!</p>
+    </div>
+    <div class="welcome-to-photo">
+      <%= image_tag "dogs_walking_forrests.png", alt: "Photo of a dog walking in the woods", class: "photo-two" %>
+    </div>
+  </div>
+  <div class="prices-div">
+    <div class="d-flex justify-content-center">
+      <h1 class="wanstead-wags-title titles prices" style="color: #032B22;">Prices</h1>
+    </div>
+    <div class="services">
+      <div class="d-flex flex-column align-items-center">
+        <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "services-images" %>
+        <div class="d-flex flex-column align-items-center">
+          <p class="text services-description services-font">TAILORED TO YOUR DOGS NEEDS</p>
+          <p class="text services-description service-name">SOLO DOG WALKS</p>
+          <p class="text services-description services-font">£25 per hour</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <%= image_tag "group_walks.png", alt: "Photo of a 5 dogs in a field on leashes with a walker", class: "services-images" %>
+        <div class="d-flex flex-column align-items-center">
+          <p class="text services-description services-font">A FUN, SOCIABLE EXPERIENCE</p>
+          <p class="text services-description">GROUP WALKS</p>
+          <p class="text services-description services-font">£17.5 per hour</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <%= image_tag "pet_sitting.png", alt: "Photo of a dog sitting on the living room floor", class: "services-images" %>
+        <div class="d-flex flex-column align-items-center">
+          <p class="text services-description services-font">IN-HOME</p>
+          <p class="text services-description">DOG SITS</p>
+          <p class="text services-description services-font">£15 per hour</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <%= image_tag "pet_sitting.png", alt: "Photo of a dog sitting on the living room floor", class: "services-images" %>
+        <div class="d-flex flex-column align-items-center">
+          <p class="text services-description services-font">FOR HIGH ENERGY DOGS</p>
+          <p class="text services-description">30 MIN SOLO RUN</p>
+          <p class="text services-description services-font">£35</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <%= image_tag "pet_sitting.png", alt: "Photo of a dog sitting on the living room floor", class: "services-images" %>
+        <div class="d-flex flex-column align-items-center">
+          <p class="text services-description services-font">FOR SUPER HIGH ENERGY DOGS</p>
+          <p class="text services-description">1 HOUR SOLO RUN</p>
+          <p class="text services-description services-font">£60</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="how-to-book">
+    <div class="booking-instructions d-flex justify-content-between align-items-center">
+      <div class="steps d-flex flex-column">
+        <h1 class="wanstead-wags-title titles prices booking-title" style="color: #032B22; margin: 0;">How To Book</h1>
+        <p class="green-text color">Booking a walk with me is quick and easy! Simply follow these steps:</p>
+        <ol>
+          <li class="green-text indent">Contact Me: Use the contact form on this website or send me an email to let me know your dog’s needs.</li>
+          <li class="green-text indent">Schedule a Meet-and-Greet: I’ll arrange a time to meet you and your pup! This helps me understand their personality, walking style, and any special instructions you might have.</li>
+          <li class="green-text indent">Choose Your Service: Select the type of walk you need—individual, group, and your preferred days and times.</li>
+          <li class="green-text indent">Confirm the Booking: I’ll confirm your booking and provide a simple payment process to secure your slot.</li>
+        </ol>
+          <p class="green-text">That’s it! I’ll handle the rest, ensuring your dog has a safe, fun, and energising walk while you focus on your day.</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <h3 class="wanstead-wags-title booking-title" style="font-size: 2rem; color: #032B22;">Ready to book?</h3>
+          <a href="/"><p class="text-center button font letter-spacing-5" style="margin:0;">BOOK TODAY!</p></a>
+        </div>
+      </div>
+      <div class="d-flex flex-column doggy-picture">
+        <%= image_tag "dw.png", alt: "Photo of a dog walking in the woods", class: "photo-three" %>
+        <p class="caption-two text-center width-85">I look forward to meeting you and your four-legged family members soon!</p>
+      </div>
+    </div>
+  </div>
+  <div class="blog-background">
+    <h1 class="welcome wanstead-wags-title titles d-flex justify-content-center" style="color: #40FFB5;">Blogs</h1>
+    <div class="blog-posts d-flex justify-content-evenly">
+      <div class="blog d-flex flex-column align-items-center">
+        <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
+        <div class="d-flex flex-column align-items-center">
+          <p class="text blogs-description">Tips for dog care.</p>
+          <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
+        </div>
+      </div>
+      <div class="blog d-flex flex-column align-items-center">
+        <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
+        <div class="d-flex flex-column align-items-center">
+          <p class="text blogs-description">Fun local dog-friendly parks or trails.</p>
+          <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
+        </div>
+      </div>
+      <div class="blog d-flex flex-column align-items-center">
+        <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
+        <div class="d-flex flex-column align-items-center">
+          <p class="text blogs-description">Protecting paws in winter.</p>
+          <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
