@@ -1,0 +1,48 @@
+.blogs {
+  display: flex;
+  background-color: #011712;
+  padding: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.blog-title {
+  font-family: "Abril Fatface", serif;
+  color: #40FFB5;
+  font-size: 80px;
+}
+
+.blog-photo-div {
+  width: 40%;
+}
+
+.blog-section {
+  background-color: #EFEDE7;
+  padding: 100px 100px 100px 100px;
+}
+
+.blog-intro {
+  background-color: #F4CEE2;
+  border: 1px solid #011712;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 150px;
+}
+
+.font-abril {
+  font-family: "Abril Fatface", serif;
+}
+
+.font-michroma {
+  font-family: "Michroma", sans-serif;
+}
+
+.title-blog-section {
+  font-size: 50px;
+}
+
+.blog-intro-text {
+  font-size: 18px;
+}

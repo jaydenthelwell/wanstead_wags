@@ -1,25 +1,45 @@
-<div class="green-background">
-  <div class="d-flex justify-content-evenly gap-5 michroma">
-    <div class="office-hours">
-      <h2 class="michroma footer-titles">OFFICE HOURS</h2>
-      <div class="footer-text">
-        <p>MONDAY TO FRIDAY</p>
-        <p>9:00 am to 6:00 pm</p>
-        <p>SATURDAY</p>
-        <P>9:00 am to 12 noon</P>
-        <p>Phone: 07794873250</p>
-        <p>Email: wansteadwags@gmail.com</p>
+<div class="green-background footer">
+  <div class="footer-spacing flex-wrap gap-3 michroma w-100">
+    <div class="hours hours-gap d-flex gap-10 flex-wrap">
+      <div class="walking-hours flex-basis-100 flex-md-basis-33">
+        <h3 class="michroma footer-titles mb-0">WALKING HOURS</h3>
+        <br>
+        <div class="footer-text mt-1">
+          <p>MONDAY TO FRIDAY</p>
+          <p>7:00 am to 8:00 pm</p>
+          <br>
+          <p>SATURDAY</p>
+          <p>9:00 am to 12 noon</p>
+        </div>
+      </div>
+      <div class="office-hours flex-basis-100 flex-md-basis-33">
+        <h2 class="michroma footer-titles mb-0">OFFICE HOURS</h2>
+        <br>
+        <div class="footer-text">
+          <p>MONDAY TO FRIDAY</p>
+          <p>9:00 am to 6:00 pm</p>
+          <br>
+          <p>SATURDAY</p>
+          <p>9:00 am to 12 noon</p>
+          <br>
+          <p>Phone: 07794873250</p>
+          <p>Email: wansteadwags@gmail.com</p>
+        </div>
       </div>
     </div>
-    <div class="walking-hours">
-      <h3 class="michroma footer-titles">WALKING HOURS</h3>
-      <div class="footer-text mt-1">
-        <p>MONDAY TO FRIDAY</p>
-        <p>7:00 am to 8:00 pm</p>
-        <p>SATURDAY</p>
-        <P>9:00 am to 12 noon</P>
-      </div>
+    <div class="social-icons flex-basis-100 flex-md-basis-33 d-flex gap-3 justify-content-center">
+      <a href="https://www.facebook.com/share/15X7shdumS/?mibextid=wwXlfr" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-square-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
     </div>
   </div>
-  <%= image_tag "logo-footer.png", class: "logo-footer" %>
+  <%# <div class="footer-logo"> %>
+    <%= image_tag "logo-footer.png", class: "logo-footer" %>
+  <%# </div> %>
 </div>

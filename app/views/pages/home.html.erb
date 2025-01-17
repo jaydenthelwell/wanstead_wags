@@ -1,115 +1,139 @@
 <div class="landing-container">
-  <div class="background-picture">
   <%= render 'shared/navbar' %>
-    <div class="ww-home-text d-flex justify-content-center align-items-center flex-column">
-      <h1 class="wanstead-wags-title text-center">Wanstead Wags</h1>
-      <h1 class="font text-center">PROFESSIONAL DOG WALKING, RUNNING AND SITTING SERVICES</h1>
-      <a href="/"><p class="text-center button font letter-spacing-5">BOOK TODAY</p></a>
-    </div>
-  </div>
-  <div class="green-background">
-    <div class="welcome-message">
-      <h1 class="welcome wanstead-wags-title titles" style="color: #40FFB5;">Welcome to<br>Wanstead Wags</h1>
-      <p class="text padding-text">At Wanstead Wags, we know the name’s a bit tongue-in-cheek—after all, we’re all about spoiled pups, not footballers’ wives!  Whether your dog is more of a chilled-out snoozer or a full-on bundle of energy, I’m here to make sure they get the perfect walk to suit their vibe. Take the stress off your busy day and let me handle the walking—check out my services and see how I can help!</p>
-    </div>
-    <div class="welcome-to-photo">
-      <%= image_tag "dogs_walking_forrests.png", alt: "Photo of a dog walking in the woods", class: "photo-two" %>
-    </div>
-  </div>
-  <div class="prices-div">
-    <div class="d-flex justify-content-center">
-      <h1 class="wanstead-wags-title titles prices" style="color: #032B22;">Prices</h1>
-    </div>
-    <div class="services">
-      <div class="d-flex flex-column align-items-center">
-        <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "services-images" %>
-        <div class="d-flex flex-column align-items-center">
-          <p class="text services-description services-font">TAILORED TO YOUR DOGS NEEDS</p>
-          <p class="text services-description service-name">SOLO DOG WALKS</p>
-          <p class="text services-description services-font">£25 per hour</p>
-        </div>
-      </div>
-      <div class="d-flex flex-column align-items-center">
-        <%= image_tag "group_walks.png", alt: "Photo of a 5 dogs in a field on leashes with a walker", class: "services-images" %>
-        <div class="d-flex flex-column align-items-center">
-          <p class="text services-description services-font">A FUN, SOCIABLE EXPERIENCE</p>
-          <p class="text services-description">GROUP WALKS</p>
-          <p class="text services-description services-font">£17.5 per hour</p>
-        </div>
-      </div>
-      <div class="d-flex flex-column align-items-center">
-        <%= image_tag "pet_sitting.png", alt: "Photo of a dog sitting on the living room floor", class: "services-images" %>
-        <div class="d-flex flex-column align-items-center">
-          <p class="text services-description services-font">IN-HOME</p>
-          <p class="text services-description">DOG SITS</p>
-          <p class="text services-description services-font">£15 per hour</p>
-        </div>
-      </div>
-      <div class="d-flex flex-column align-items-center">
-        <%= image_tag "pet_sitting.png", alt: "Photo of a dog sitting on the living room floor", class: "services-images" %>
-        <div class="d-flex flex-column align-items-center">
-          <p class="text services-description services-font">FOR HIGH ENERGY DOGS</p>
-          <p class="text services-description">30 MIN SOLO RUN</p>
-          <p class="text services-description services-font">£35</p>
-        </div>
-      </div>
-      <div class="d-flex flex-column align-items-center">
-        <%= image_tag "pet_sitting.png", alt: "Photo of a dog sitting on the living room floor", class: "services-images" %>
-        <div class="d-flex flex-column align-items-center">
-          <p class="text services-description services-font">FOR SUPER HIGH ENERGY DOGS</p>
-          <p class="text services-description">1 HOUR SOLO RUN</p>
-          <p class="text services-description services-font">£60</p>
-        </div>
+  <section id="section1" class="image-bg">
+    <div class="background-picture">
+      <div class="ww-home-text d-flex justify-content-center align-items-center flex-column">
+        <h1 class="wanstead-wags-title wanstead-wags text-center">Wanstead Wags</h1>
+        <h1 class="ww-home-services font text-center">PROFESSIONAL DOG WALKING SERVICES</h1>
+        <a href="/"><p class="text-center button mt-5">BOOK TODAY</p></a>
       </div>
     </div>
-  </div>
-  <div class="how-to-book">
-    <div class="booking-instructions d-flex justify-content-between align-items-center">
-      <div class="steps d-flex flex-column">
-        <h1 class="wanstead-wags-title titles prices booking-title" style="color: #032B22; margin: 0;">How To Book</h1>
-        <p class="green-text color">Booking a walk with me is quick and easy! Simply follow these steps:</p>
-        <ol>
-          <li class="green-text indent">Contact Me: Use the contact form on this website or send me an email to let me know your dog’s needs.</li>
-          <li class="green-text indent">Schedule a Meet-and-Greet: I’ll arrange a time to meet you and your pup! This helps me understand their personality, walking style, and any special instructions you might have.</li>
-          <li class="green-text indent">Choose Your Service: Select the type of walk you need—individual, group, and your preferred days and times.</li>
-          <li class="green-text indent">Confirm the Booking: I’ll confirm your booking and provide a simple payment process to secure your slot.</li>
-        </ol>
-          <p class="green-text">That’s it! I’ll handle the rest, ensuring your dog has a safe, fun, and energising walk while you focus on your day.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <h3 class="wanstead-wags-title booking-title" style="font-size: 2rem; color: #032B22;">Ready to book?</h3>
-          <a href="/"><p class="text-center button font letter-spacing-5" style="margin:0;">BOOK TODAY!</p></a>
-        </div>
+  </section>
+
+  <section id="section2" class="color-bg" style="background-color: #011712;">
+    <div class="green-background">
+      <div class="welcome-message">
+        <h1 class="welcome wanstead-wags-title titles" style="color: #40FFB5;">Welcome to<br>Wanstead Wags</h1>
+        <p class="text padding-text">At Wanstead Wags, we provide care for every dog, with a focus on helping high-energy dogs find balance and calm. We understand that energetic dogs require more than just physical exercise—they need mental stimulation too. That’s why we tailor our walks to not only burn off excess energy but also engage their minds. Whether your dog is a bundle of energy or needs a calming routine, I’m here to ensure they receive the care and attention they deserve.</p>
       </div>
-      <div class="d-flex flex-column doggy-picture">
-        <%= image_tag "dw.png", alt: "Photo of a dog walking in the woods", class: "photo-three" %>
-        <p class="caption-two text-center width-85">I look forward to meeting you and your four-legged family members soon!</p>
+      <div class="welcome-to-photo">
+        <%= image_tag "dogs_walking_forrests.png", alt: "Photo of a dog walking in the woods", class: "photo-two" %>
       </div>
     </div>
-  </div>
-  <div class="blog-background">
-    <h1 class="welcome wanstead-wags-title titles d-flex justify-content-center" style="color: #40FFB5;">Blogs</h1>
-    <div class="blog-posts d-flex justify-content-evenly">
-      <div class="blog d-flex flex-column align-items-center">
-        <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
-        <div class="d-flex flex-column align-items-center">
-          <p class="text blogs-description">Tips for dog care.</p>
-          <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
-        </div>
+  </section>
+
+  <section id="section3" class="color-bg" style="background-color: #F4CEE2;">
+    <div class="prices-div">
+      <div class="d-flex justify-content-center flex-column align-items-center">
+        <h1 class="wanstead-wags-title titles prices" style="color: #032B22;">Services</h1>
+        <p class="price-list" style="font-family: 'Michroma', sans-serif; font-size: 22px;">Click here to see our full price list.</p>
       </div>
-      <div class="blog d-flex flex-column align-items-center">
-        <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
-        <div class="d-flex flex-column align-items-center">
-          <p class="text blogs-description">Fun local dog-friendly parks or trails.</p>
-          <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
+      <div class="services">
+        <div class="d-flex align-items-center services-flex">
+          <div class="service-image-flex">
+            <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "services-images" %>
+          </div>
+          <div class="d-flex flex-column align-items-center services-paragraph">
+            <h1 class="text services-description service-name">Solo Dog Walks</h1>
+            <p class="text services-description services-font services-text">Our solo walks offer your dog one-on-one attention in peaceful, natural settings like woods, fields, and lakes. Perfect for dogs who prefer quiet adventures, these walks are tailored to their needs, ensuring they get gentle exercise, mental stimulation, and a chance to unwind in nature.</p>
+          </div>
         </div>
-      </div>
-      <div class="blog d-flex flex-column align-items-center">
-        <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
-        <div class="d-flex flex-column align-items-center">
-          <p class="text blogs-description">Protecting paws in winter.</p>
-          <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
+        <div class="d-flex align-items-center services-flex">
+          <div class="service-image-flex">
+            <%= image_tag "group_walks.png", alt: "Photo of a 5 dogs in a field on leashes with a walker", class: "services-images" %>
+          </div>
+          <div class="d-flex flex-column align-items-center services-paragraph">
+            <h1 class="text services-description service-name">Group Dog Walks</h1>
+            <p class="text services-description services-font services-text">Our group dog walks are a great way for your pup to socialise and burn off energy in a safe, fun environment. Led by an experienced walker, your dog will enjoy the company of 3-4 other friendly dogs while exploring parks, fields, and woodlands. It's the perfect opportunity for socialisation, exercise, and making new furry friends!</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center services-flex">
+          <div class="service-image-flex">
+            <%= image_tag "pet_sitting.png", alt: "Photo of a dog sitting on the living room floor", class: "services-images" %>
+          </div>
+          <div class="d-flex flex-column align-items-center services-paragraph">
+            <h1 class="text services-description service-name">Run & Stimulate Package</h1>
+            <p class="text services-description services-font services-text">For dogs who need to burn off energy and exercise their brains, I’m offering a specialized Energize & Engage Package. This includes a 45-minute run where your dog can cover 6-8km, getting the intense physical exercise they need to stay fit and healthy. Afterward, we’ll spend 30 minutes doing mental stimulation activities like scent-based games, puzzle toys, and training refreshers to engage their minds. This balanced approach helps high-energy dogs release excess energy, reduce anxiety, and prevent destructive behaviors, giving them the opportunity to thrive both physically and mentally.</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center services-flex">
+          <div class="service-image-flex">
+            <%= image_tag "pet_sitting.png", alt: "Photo of a dog sitting on the living room floor", class: "services-images" %>
+          </div>
+          <div class="d-flex flex-column align-items-center services-paragraph">
+            <h1 class="text services-description service-name">Dog Sits</h1>
+            <p class="text services-description services-font services-text">Whether you need a short visit or care for an extended period, our dog sitting service offers flexibility to suit your needs. From 1-hour visits to multi-week stays while you’re on holiday, your dog will receive personalised attention, comfort, and care in a familiar environment. We ensure they’re happy, well-fed, and loved while you’re away.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section id="section4" class="color-bg" style="background-color: #EFEDE7;">
+    <div class="how-to-book">
+      <div class="booking-instructions d-flex justify-content-between align-items-center">
+        <div class="steps d-flex flex-column">
+          <h1 class="wanstead-wags-title titles prices booking-title" style="color: #032B22; margin: 0;">How To Book</h1>
+          <p class="green-text color">Booking a walk with me is quick and easy! Simply follow these steps:</p>
+          <ol>
+            <li class="green-text indent">Contact Me: Use the contact form on this website or send me an email to let me know your dog’s needs.</li>
+            <li class="green-text indent">Schedule a Meet-and-Greet: I’ll arrange a time to meet you and your pup! This helps me understand their personality, walking style, and any special instructions you might have.</li>
+            <li class="green-text indent">Choose Your Service: Select the type of walk you need—individual, group, and your preferred days and times.</li>
+            <li class="green-text indent">Confirm the Booking: I’ll confirm your booking and provide a simple payment process to secure your slot.</li>
+          </ol>
+            <p class="green-text">That’s it! I’ll handle the rest, ensuring your dog has a safe, fun, and energising walk while you focus on your day.</p>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <h3 class="wanstead-wags-title booking-title" style="font-size: 2rem; color: #032B22;">Ready to book?</h3>
+            <a href="/"><p class="text-center button" style="margin:0;">BOOK TODAY</p></a>
+          </div>
+        </div>
+        <div class="d-flex flex-column doggy-picture align-items-center">
+          <%= image_tag "how-to-book-image.png", alt: "Photo of a dog walking in the woods", class: "photo-three" %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section5" class="color-bg" style="background-color: #011712;">
+    <div class="blog-background">
+      <h1 class="welcome wanstead-wags-title titles d-flex justify-content-center" style="color: #40FFB5;">Blogs</h1>
+      <div class="blog-posts d-flex justify-content-evenly">
+        <div class="blog d-flex flex-column align-items-center">
+          <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
+          <div class="d-flex flex-column align-items-center">
+            <p class="text blogs-description">Tips for dog care.</p>
+            <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
+          </div>
+        </div>
+        <div class="blog d-flex flex-column align-items-center">
+          <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
+          <div class="d-flex flex-column align-items-center">
+            <p class="text blogs-description">Fun local dog-friendly parks or trails.</p>
+            <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
+          </div>
+        </div>
+        <div class="blog d-flex flex-column align-items-center">
+          <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
+          <div class="d-flex flex-column align-items-center">
+            <p class="text blogs-description">Protecting paws in winter.</p>
+            <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section6" class="color-bg" style="background-color: #EFEDE7;">
+    <div class="how-to-book">
+      <div class="booking-instructions about-me d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-column about-me-photo">
+          <%= image_tag "about-me-image.png", alt: "Photo of a dog walking in the woods", class: "about-me-photo" %>
+        </div>
+        <div class="about-me-text d-flex flex-column">
+          <h1 class="wanstead-wags-title titles prices booking-title" style="color: #032B22; margin: 0;">About Me</h1>
+          <p class="green-text color"> Hi! I’m Jayden, a passionate dog lover and a local dog walker in Wanstead! I’ve always adored spending time with dogs—whether it’s enjoying their boundless energy, forming special bonds, or simply seeing their tails wag with joy.<br><br>Combining my love for animals and my enthusiasm for staying active, I’ve found dog walking to be the perfect way to do what I love while helping busy pet owners like you. Originally from Marlow, Buckinghamshire, I recently moved to Wanstead whilst I study at university. I bring flexibility, reliability, and a strong work ethic to everything I do—including caring for your pets. You can trust that your dog will be in safe, caring, and responsible hands with me.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

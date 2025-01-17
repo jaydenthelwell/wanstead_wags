@@ -35,13 +35,28 @@ body {
   top: 0;
 }
 
+.image-bg {
+  background-image: url("wanstead_wags.png");
+}
+
 .font {
   font-family: "Michroma", sans-serif;
   font-style: normal;
   text-decoration: none;
   color: #EFEDE7;
-  letter-spacing: 15px;
+  letter-spacing: 2px;
   font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.services-text {
+  font-family: "Michroma", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #EFEDE7;
+  letter-spacing: 0px;
+  font-size: 21px;
+  line-height: 30px;
 }
 
 .text {
@@ -49,18 +64,8 @@ body {
   font-style: normal;
   text-decoration: none;
   color: #EFEDE7;
-  letter-spacing: 2px;
-  font-size: 21px;
-  line-height: 40px;
-}
-
-.text {
-  font-family: "Michroma", sans-serif;
-  font-style: normal;
-  text-decoration: none;
-  color: #EFEDE7;
-  letter-spacing: 2px;
-  font-size: 21px;
+  letter-spacing: 1px;
+  font-size: 16px;
   line-height: 40px;
 }
 
@@ -69,7 +74,7 @@ body {
   font-style: normal;
   text-decoration: none;
   color: #032B22;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 16px;
   line-height: 40px;
 }
@@ -87,8 +92,8 @@ body {
 }
 
 .services-description {
-  text-align: center;
-  width: max-content;
+  text-align: left;
+  width: 100%;
   color: #032B22;
   padding: 0;
 }
@@ -98,6 +103,7 @@ body {
   width: max-content;
   color: #40FFB5;
   padding: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .letter-spacing-5 {
@@ -105,7 +111,7 @@ body {
 }
 
 .background-picture {
-  height: 90vh;
+  height: 95vh;
   width: 100%;
   top: 0;
   position: relative;
@@ -125,18 +131,40 @@ body {
   font-style: normal;
   text-decoration: none;
   color: #032B22;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 16px;
   line-height: 40px;
 }
 
+.footer {
+  padding: 40px!important;
+  // height: 80vh;
+  position: relative;
+}
+
+.gap-10 {
+  gap: 10rem;
+}
+
 .footer-titles {
-  text-decoration: underline;
   color: #EFEDE7;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.footer-spacing  {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .footer-text {
-  color: #EFEDE7;
+  color: #efede7d4;
+  font-size: 16px;
+  width: max-content;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .doggy-picture {
@@ -144,34 +172,50 @@ body {
   margin-left: 230px;
 }
 
+.about-me-photo {
+  width: 100%;
+}
+
 .michroma {
   font-family: "Michroma", sans-serif;
 }
 
+.wanstead-wags  {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .wanstead-wags-title {
-  font-family: "DM Serif Text", serif;
+  font-family: "Abril Fatface", serif;
   font-optical-sizing: auto;
-  // font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "SOFT" 0,
     "WONK" 0;
   color: #FFAFDA;
   font-size: 6rem;
-  // text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   letter-spacing: 3px;
-  font-weight: 700;
 }
 
 .services {
-  gap: 10rem;
+  gap: 2rem;
+}
+
+.fa-brands {
+  color: #EFEDE7;
+  font-size: 30px;
+}
+
+.gap-20 {
+  gap: 20rem;
+}
+
+.width-33 {
+  width: 33.333%
 }
 
 .services-images {
-  width: 400px;
+  width: 200px;
   border-radius: 50%;
-  padding-bottom: 30px;
-  max-width: 100%;
   height: auto;
 }
 
@@ -182,22 +226,33 @@ body {
   height: auto;
 }
 
+.ww-home-services {
+  width: 65%;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 .ww-home-text {
-  margin-top: 100px;
+  padding-top: 250px;
 }
 
 .button {
+  display: inline-block;
+  align-self: center;
+  font-family: "Michroma", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 2rem;
   color: black;
   padding: 20px;
   background: #40FFB5;
-  border-color: #EFEDE7 !important;
+  border-color: #40FFB5 !important;
   border: solid;
   border-width: 1px;
   font-size: 16px;
   border-radius: 10px;
-  display: inline-block;
-  align-self: center;
-  margin-top: 220px;
+  margin-top: 200px;
 }
 
 .titles {
@@ -205,7 +260,7 @@ body {
 }
 
 .welcome {
-  padding: 50px 0;
+  padding: 100px 0 50px 0;
 }
 
 .welcome-message {
@@ -217,10 +272,6 @@ body {
   width: 800px;
 }
 
-.prices {
-  margin-bottom: 100px;
-}
-
 .prices-div {
   background-color: #F4CEE2;
   padding: 100px 0px;
@@ -229,7 +280,7 @@ body {
 .green-background {
   display: flex;
   justify-content: space-between;
-  padding: 55px;
+  padding: 20px;
   flex-wrap: wrap;
   width: 100%;
   background-color: #011712;
@@ -246,6 +297,7 @@ body {
   text-align: center;
   flex: 1;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .welcome-to-photo {
@@ -255,6 +307,10 @@ body {
   flex: 1;
 }
 
+.services-paragraph {
+  padding: 0 40px;
+}
+
 .photo-two {
   max-width: 100%;
   height: auto;
@@ -262,6 +318,10 @@ body {
 
 .photo-three {
   max-width: 85%;
+}
+
+.about-me-photo {
+  max-width: 100%;
 }
 
 .prices-div {
@@ -274,15 +334,36 @@ body {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 20px;
+  padding: 60px;
 }
 
 .service-name {
-  font-size: 25px
+  font-family: "Abril Fatface", serif;
+  font-weight: 700;
+  font-size: 35px
 }
 
 .steps {
   max-width: 50%;
   margin-left: 60px;
+}
+
+.about-me {
+  gap: 11rem;
+}
+
+.ab-caption {
+  font-family: "Michroma", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #032B22;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.about-me-text {
+  max-width: 35%;
 }
 
 .how-to-book {
@@ -293,14 +374,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 3rem 0rem 10rem 0rem;
 }
 
 .blog-posts {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping for responsiveness */
-  justify-content: center; /* Centers the blogs in the container */
-  gap: 10rem; /* Adds space between blog posts */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
 }
 
 .blog {
@@ -308,13 +389,14 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 400px; /* Matches the image width */
+  max-width: 400px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .blog-images {
-  width: 100%; /* Ensure the image fits the container */
+  width: 100%;
   height: auto;
-  max-width: 400px; /* Set max width for responsiveness */
+  max-width: 400px;
   padding-bottom: 30px;
 }
 
@@ -329,28 +411,132 @@ body {
 .blog-text {
   max-width: 400px;
   margin: 0;
-  font-size: 19px;
   line-height: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .logo-footer {
-  width:100%;
+  width: 100%;
+  height: 25%;
+  margin-top: 4rem;
 }
 
-@media screen and (max-width: 768px) {
+p {
+  margin: 0!important;
+}
+
+.hours {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-titles {
+    font-size: 12px;
+  }
+
+  .blog-posts {
+    gap: 3rem;
+    margin-bottom: 40px;
+  }
+
+  .blog-background {
+    padding: 0;
+  }
+
+  .width-85 {
+    width: 90%;
+  }
+
+  .text {
+    line-height: normal;
+  }
+
+  .services-paragraph {
+    padding: 30px 20px 15px 20px;
+  }
+
+  .services-flex {
+    justify-content: center;
+  }
+
+  .service-image-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .prices-div {
+    padding: 0px;
+  }
+
+  .ww-home-services {
+    width: 100%;
+  }
+
+  .blog-text {
+    max-width: 350px;
+    font-size: 13px;
+  }
+
+  .blog {
+    max-width: 300px;
+  }
+
+  .logo-footer {
+    margin-top: 2rem;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .footer-description {
+    font-size: 16px;
+  }
+
+  .hours-gap {
+    gap: 2rem;
+  }
+
+  .footer-spacing  {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   .caption-two {
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .ab-caption {
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .ab-caption {
     line-height: 25px;
     margin-top: 10px;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
   }
 
   .how-to-book {
-    padding: 10px;
+    padding: 40px 10px;
   }
 
   .booking-instructions {
     flex-direction: column;
-    align-items: center; /* Center-align for better presentation */
-    gap: 20px; /* Add space between sections */
+    align-items: center;
+    gap: 0px; /* Add space between sections */
   }
 
   .doggy-picture {
@@ -366,13 +552,28 @@ body {
     height: auto; /* Maintain aspect ratio */
   }
 
-  .caption-two {
-    font-size: 0.9rem; /* Adjust caption font size for readability */
-    width: 100%; /* Ensure caption fits within the screen */
-    text-align: center; /* Center-align the text */
+  .about-me-photo{
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .about-me-photo img {
+    width: 80%; /* Adjust the image size to fit smaller screens */
+    max-width: 300px; /* Set a maximum width for large phones */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .steps {
+    width: 100%;
+    text-align: left;
+    max-width: 100%;
+    margin: 0px;
+    padding: 20px;
+  }
+
+  .about-me-text {
     width: 100%;
     text-align: left;
     max-width: 100%;
@@ -385,29 +586,29 @@ body {
   }
 
   .wanstead-wags-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 15px;
   }
 
   .green-text {
-    font-size: 1rem; /* Make text slightly smaller */
+    font-size: 12px;
     line-height: 1.5; /* Improve readability on smaller screens */
   }
 
   .steps ol {
     padding-left: 20px; /* Add padding for list alignment */
+    margin-top: 1rem;
   }
 
   .steps ol li {
     margin-bottom: 10px; /* Add spacing between list items */
-    font-size: 0.95rem; /* Adjust font size for smaller screens */
   }
 
   .button {
-    font-size: 1rem; /* Adjust button text size */
-    padding: 10px 20px; /* Add padding for easier tapping */
-    width: fit-content; /* Ensure button doesn't stretch unnecessarily */
+    font-size: 0.5rem;
+    padding: 10px 20px;
+    width: max-content;
   }
 
   .service-name {
@@ -415,8 +616,8 @@ body {
   }
 
   .padding-text {
-    font-size: 12px;
-    max-width: 93%;
+    font-size: 14px;
+    max-width: 100%;
     height: auto;
     text-align: center;
     line-height: 1.5;
@@ -434,6 +635,7 @@ body {
   .green-background {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50px;
   }
 
   .welcome-message,
@@ -446,13 +648,9 @@ body {
     margin-bottom: 20px;
   }
 
-  .wanstead-wags-title {
-    font-size: 2.5rem;
-  }
-
   .font {
     font-size: 0.7rem;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
   }
 
   .button {
@@ -461,6 +659,7 @@ body {
 
   .padding-text {
     padding: 0 ;
+    padding-bottom: 40px;
   }
 
   .services {
@@ -468,12 +667,14 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0;
+    padding: 0;
   }
 
   .services > div {
-    margin-bottom: 20px;
+    margin: 20px 0;
     width: 100%;
     max-width: 400px;
+    flex-wrap: wrap;
   }
 
   .services-images {
@@ -486,7 +687,7 @@ body {
   }
 
   .prices {
-    margin: 50px 0px;
+    margin: 50px 0px 0px 0;
   }
 
   .welcome {
@@ -494,23 +695,189 @@ body {
   }
 
   .background-picture {
-    height: 75vh;
+    height: 85vh;
+  }
+
+  .blogs-description {
+    max-width: 350px;
+  }
+
+  .price-list {
+    font-size: 16px!important;
+  }
+
+  .welcome {
+    padding: 50px 0 50px 0;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)  and (orientation: portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)  and (orientation: portrait) {
+  .footer-spacing  {
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 70%;
+  }
+
+  .ww-home-text {
+    padding-top: 500px;
+  }
+
+  .green-background {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .photo-two {
+    padding-right: 0px;
+    padding-bottom: 80px;
+  }
+
+  .welcome-message {
+    width: 70%;
+    margin-bottom: 60px;
+  }
+
   .padding-text {
     padding: 0;
   }
 
+  .services {
+    padding: 0px;
+    padding-top: 60px;
+  }
+
   .photo-two {
-    padding-left: 100px;
-    padding-right: 0;
+    width: 550px;
+  }
+
+  .how-to-book {
+    padding: 70px 50px;
+  }
+
+  .photo-three {
+    max-width: 100%;
+  }
+
+  .width-85 {
+    width: 100%;
+  }
+
+  .doggy-picture {
+    margin-left: 50px;
+  }
+
+  .steps {
+    margin: 0;
+  }
+
+  .blog-posts {
+    gap: 2rem;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me-text {
+    max-width: 100%;
+    padding: 80px 0 20px 0;
+  }
+
+  .about-me {
+    gap: 0;
+  }
+
+  .navbar-text {
+    font-size: 1.2rem;
   }
 }
 
-// @media screen and (min-width: 1024) {
-// }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)  and (orientation: portrait) {
+  .logo {
+    width: 50%;
+  }
 
-// @media screen and (min-width: 768px) {
-// }
+  .green-background {
+    padding: 0;
+  }
+
+  .how-to-book {
+    padding: 70px;
+  }
+
+  .photo-three {
+    max-width: 100%;
+  }
+  .width-85 {
+    width: 100%;
+  }
+
+  .doggy-picture {
+    margin-left: 90px;
+  }
+
+  .blog-posts {
+    gap: 4rem;
+  }
+
+  .blog {
+    max-width: 350px;
+  }
+
+  .blog-background {
+    padding: 0rem 0rem 10rem 0rem;
+  }
+
+  .welcome {
+    padding: 100px 0 80px 0;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 769px) and (-webkit-min-device-pixel-ratio: 1.5)  and (orientation: portrait) {
+  .gap-10 {
+    gap: 6rem;
+  }
+
+  .welcome {
+    padding: 50px 0 80px 0;
+  }
+
+  .steps {
+    margin: 0;
+  }
+
+  .booking-instructions {
+    flex-direction: column;
+  }
+
+  .prices-div {
+    padding: 100px 20px;
+  }
+
+  .services-paragraph {
+    padding: 0 20px 0 20px;
+  }
+
+  .wanstead-wags-title {
+    font-size: 4rem;
+  }
+
+  .ww-home-services {
+    font-size: 1rem;
+  }
+
+  .steps {
+    max-width: 100%;
+  }
+
+  .doggy-picture {
+    margin: 0;
+  }
+
+  .photo-three {
+    max-width: 60%;
+    padding-top: 70px;
+  }
+}
