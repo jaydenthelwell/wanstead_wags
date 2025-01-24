@@ -1,0 +1,170 @@
+.banner {
+  display: flex;
+  background-color: #011712;
+  padding: 130px 50px 50px 50px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.blog-title {
+  font-family: "Abril Fatface", serif;
+  color: #40FFB5;
+  font-size: 80px;
+}
+
+.blog-photo-div {
+  width: 40%;
+}
+
+.blog-photo {
+  border-radius: 50px!important;
+}
+
+.post-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 2rem;
+}
+
+.blog-section {
+  margin-bottom: 50px;
+}
+
+.filters {
+  padding-bottom: 100px;
+}
+
+.blogs-row {
+  padding-bottom: 60px;
+}
+
+.blog-intro {
+  background-color: #F4CEE2;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 150px;
+}
+
+.font-abril {
+  font-family: "Abril Fatface", serif;
+}
+
+.font-michroma {
+  font-family: "Michroma", sans-serif;
+}
+
+.title-blog-section {
+  font-size: 50px;
+}
+
+.blog-intro-text {
+  font-size: 25px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #EFEDE7!important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)!important;
+}
+
+.post-link {
+  text-decoration: none;
+}
+
+#section4 {
+  background-color: #032B22;
+}
+
+.filter-button {
+  background-color: #EFEDE7;
+  border-radius: 40px;
+  padding: 10px 50px;
+  transition: background-color 0.3s, color 0.3s;
+  border: solid;
+  color: #032B22;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.active-filter {
+  background-color: #032B22!important;
+  color: #EFEDE7!important;
+}
+
+.filter-button:hover {
+  background-color: #D0D0D0;
+}
+
+.sign-off {
+  color: #F4CEE2;
+  font-family: 'Michroma';
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.blog-title-signoff {
+  width: 50%;
+}
+
+.breadcrumb-container {
+  padding: 10px 20px;
+  // background-color: #F4CEE2;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0!important;
+}
+
+.breadcrumb-item {
+  font-size: 15px;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #F4CEE2!important;
+  transition: color 0.3s;
+  font-family: 'Michroma';
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+  pointer-events: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #F4CEE2!important;
+}
+
+.content-image {
+  width: 100%;
+  height: auto !important;
+  display: block;
+  border-radius: 40px;
+}
+
+.post-heading {
+  font-size: 40px;
+  font-family: 'Abril Fatface';
+}
+
+.blog-section-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+html {
+  scroll-behavior: smooth;
+}
