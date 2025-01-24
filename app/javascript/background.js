@@ -29,6 +29,7 @@ const observerOptions = {
 function applyStylesForSection(section) {
   if (section.id === "section1" && section.classList.contains('image-bg')) {
     navbar.style.backgroundColor = 'transparent';
+    navbar.style.boxShadow = "none"
   } else if (section.classList.contains('color-bg')) {
     navbar.style.backgroundColor = window.getComputedStyle(section).backgroundColor;
   }
