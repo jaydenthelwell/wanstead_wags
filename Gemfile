@@ -20,6 +20,7 @@ gem 'bootstrap', '~> 5.0'
 gem 'react-rails'
 gem 'sassc-rails'
 gem 'sprockets-rails'
+gem 'zeitwerk', '< 2.7.0'
 
 gem 'font-awesome-sass'
 gem 'contentful'
