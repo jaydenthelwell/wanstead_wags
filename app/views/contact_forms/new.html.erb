@@ -1,0 +1,82 @@
+<div class="contact-container">
+  <%= render 'shared/navbar' %>
+  <section id="section2" class="color-bg" style="background-color: #011712;">
+    <div class="banner">
+      <div>
+        <h1 class="blog-title">How can we help?</h1>
+      </div>
+      <div class="blog-photo-div">
+        <%= image_tag "blogs_about_dogs.png", alt:"Picture of a Chihuaha sticking it's tongue out", class: "w-100 blog-photo" %>
+      </div>
+    </div>
+  </section>
+  <div class="form-container">
+    <div>
+      <h1 class="mb-5 header wanstead-wags-title titles" style="color: #032B22;">Get in touch</h1>
+      <div class="pink-background contact-form">
+        <%= form_with model: @contact_form, url: contact_forms_path, local: true do |form| %>
+          <div class="form-group">
+            <%= form.label :service, "What service(s) are you looking for at the moment?" %>
+            <%= form.select :service, options_for_select(['Dog Walking', 'Pet Care', 'Other']) %>
+          </div>
+
+          <div class="form-group">
+            <%= form.label :name, "Name" %>
+            <%= form.text_field :name, placeholder: "First and Last Name" %>
+          </div>
+
+          <div class="form-group">
+            <%= form.label :phone, "Phone" %>
+            <%= form.telephone_field :phone %>
+          </div>
+
+          <div class="form-group">
+            <%= form.label :email, "Email" %>
+            <%= form.email_field :email %>
+          </div>
+
+          <div class="form-group">
+            <%= form.label :postcode, "Your Postcode" %>
+            <%= form.text_field :postcode %>
+          </div>
+
+          <div class="form-group">
+            <%= form.label :message, "Message" %>
+            <%= form.text_area :message %>
+          </div>
+
+          <div class="form-group">
+            <%= form.check_box :gdpr_consent %>
+            <%= form.label :gdpr_consent, "I consent to my data being processed in accordance with GDPR." %>
+          </div>
+
+          <%= form.submit "Submit" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="form-container gap-3 pt-0">
+    <div>
+      <div>
+        <h1 class="mb-3 header services-name services-description">Contact me:</h1>
+        <p>Feel free to text, WhatsApp, or call Jayden at <a href="tel:+447794873250">+44 7794 873250</a></a>.</p>
+      </div>
+      <div>
+        <h1 class="mb-3 header services-name services-description">Areas covered:</h1>
+        <ul>
+          <li>Wanstead</li>
+          <li>Snarebrook</li>
+          <li>Leytonstone</li>
+          <li>Walthomstow</li>
+          <li>South Woodford</li>
+          <li>Woodford</li>
+        </ul>
+        <p>If your area isn't listed above, don't hesitate to get in touch with your postcode, and we'll be happy to check if you're within our catchment zone.</p>
+      </div>
+      <div>
+        <h1 class="mb-3 header services-name services-description">Email:</h1>
+        <p><a href="mailto:wansteadwags@gmail.com?subject=Inquiry&body=Hello Jayden,">wansteadwags@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</div>

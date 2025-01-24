@@ -11,7 +11,7 @@
   </section>
 
   <section id="section2" class="color-bg" style="background-color: #011712;">
-    <div class="green-background">
+    <div class="green-background welcome-section">
       <div class="welcome-message">
         <h1 class="welcome wanstead-wags-title titles" style="color: #40FFB5;">Welcome to<br>Wanstead Wags</h1>
         <p class="text padding-text">At Wanstead Wags, we provide care for every dog, with a focus on helping high-energy dogs find balance and calm. We understand that energetic dogs require more than just physical exercise—they need mental stimulation too. That’s why we tailor our walks to not only burn off excess energy but also engage their minds. Whether your dog is a bundle of energy or needs a calming routine, I’m here to ensure they receive the care and attention they deserve.</p>
@@ -96,30 +96,32 @@
 
   <section id="section5" class="color-bg" style="background-color: #011712;">
     <div class="blog-background">
-      <h1 class="welcome wanstead-wags-title titles d-flex justify-content-center" style="color: #40FFB5;">Blogs</h1>
-      <div class="blog-posts d-flex justify-content-evenly">
-        <div class="blog d-flex flex-column align-items-center">
-          <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
-          <div class="d-flex flex-column align-items-center">
-            <p class="text blogs-description">Tips for dog care.</p>
-            <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
-          </div>
-        </div>
-        <div class="blog d-flex flex-column align-items-center">
-          <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
-          <div class="d-flex flex-column align-items-center">
-            <p class="text blogs-description">Fun local dog-friendly parks or trails.</p>
-            <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
-          </div>
-        </div>
-        <div class="blog d-flex flex-column align-items-center">
-          <%= image_tag "solo_walks.png", alt: "Photo of a dog walking in the woods on their own", class: "blog-images" %>
-          <div class="d-flex flex-column align-items-center">
-            <p class="text blogs-description">Protecting paws in winter.</p>
-            <p class="text blog-text text-center">List your offers, promos, or special membership privileges and perks here to entice people to book your property.</p>
-          </div>
+      <h1 class="welcome wanstead-wags-title titles d-flex justify-content-center" style="color: #40FFB5;">Blogs About Dogs</h1>
+      <div class="blog-posts container mt-4">
+        <div class="row">
+          <% @posts.each_with_index do |post, index| %>
+            <% if index < 3 %>
+              <div class="col-md-4 mb-4">
+                <a href="<%= blogs_post_path(post.fields[:slug]) %>" class="post-link">
+                  <div class="d-flex flex-column align-items-center">
+                    <% if post.fields[:blog_image].present? %>
+                      <% image_url = "https:" + post.fields[:blog_image].url %>
+                      <%= image_tag image_url, alt: "Photo of a dog walking in the woods on their own.", class: "blog-images" %>
+                    <% else %>
+                      <p>No image available</p>
+                    <% end %>
+                    <div class="post-description">
+                      <p class="text blogs-description"><%= post.fields[:title] %></p>
+                      <p class="text blog-text text-center"><%= post.fields[:description] %></p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <% end %>
+          <% end %>
         </div>
       </div>
+      <%= link_to("VIEW ALL", blogs_path, class:"view-all-link") %>
     </div>
   </section>
 

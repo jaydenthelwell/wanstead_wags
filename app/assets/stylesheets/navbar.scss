@@ -9,6 +9,7 @@
   position: fixed!important;
   // background: transparent;
   transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px;
 }
 
 .book-here-button {
@@ -273,8 +274,10 @@
   }
 }
 
-
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1500px) {
 }

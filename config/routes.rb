@@ -1,18 +1,25 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
+  get "contact_forms/new"
+  get "contact_forms/create"
   get "up" => "rails/health#show", as: :rails_health_check
 
   root "pages#home"
   get "contact", to: "pages#contact"
-  get "blogs", to: "pages#blogs"
 
-  # Render dynamic PWA files from app/views/pwa/*
+  # Using singular controller name (BlogController)
+  resources :blogs, only: [ :index, :show ]
+
+  get "/blogs/:slug", to: "blogs#show", as: :blogs_post
+
   get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+  resources :contact_forms, only: [ :new, :create ] do
+    collection do
+      get :thank_you
+    end
+  end
 end

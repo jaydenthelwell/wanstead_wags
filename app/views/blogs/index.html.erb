@@ -1,0 +1,69 @@
+<div class="blog-container">
+  <%= render 'shared/navbar' %>
+  <section id="section2" class="color-bg" style="background-color: #011712;">
+    <div class="banner">
+      <div>
+        <h1 class="blog-title">Blogs About<br>Dogs</h1>
+      </div>
+      <div class="blog-photo-div">
+        <%= image_tag "blogs_about_dogs.png", alt:"Picture of a Chihuaha sticking it's tongue out", class: "w-100 blog-photo" %>
+      </div>
+    </div>
+  </section>
+
+  <%# <section id="section3" class="color-bg" style="background-color: #F4CEE2;"> %>
+  <div class="blog-section">
+    <div class="blog-intro d-flex flex-column">
+      <h1 class="font-abril title-blog-section">Trusted dog advice by professionals</h1>
+      <p class="font-michroma pt-4 blog-intro-text">The place for advice on dog behaviour, health, and nutrition, written by our pet experts and in-house vet professionals. Discover it all or explore the topics using the buttons below.</p>
+    </div>
+  </div>
+  <%# </section> %>
+
+  <section id="section4" class="color-bg" style="background-color: #EFEDE7;">
+    <div class="d-flex justify-content-center gap-5 filters">
+      <a href="/blogs?category=all"
+        class="filter-button font-michroma d-flex align-items-center <%= 'active-filter' if params[:category] == 'all' || params[:category].blank? %>">
+        All
+      </a>
+
+      <a href="/blogs?category=dog_walking"
+        class="filter-button font-michroma d-flex align-items-center <%= 'active-filter' if params[:category] == 'dog_walking' %>">
+        Dog Walking
+      </a>
+
+      <a href="/blogs?category=pet_care"
+        class="filter-button font-michroma d-flex align-items-center <%= 'active-filter' if params[:category] == 'pet_care' %>">
+        Pet Care
+      </a>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row blogs-row">
+        <% @posts.each do |post| %>
+          <div class="col-md-4 mb-4">
+            <a href="<%= blogs_post_path(post.fields[:slug]) %>" class="post-link">
+              <div class="post card">
+                <% if post.fields[:blog_image].present? %>
+                  <% image_url = "https:" + post.fields[:blog_image].url %>
+                  <%= image_tag image_url, alt: "Blog Image", class: "card-img-top" %>
+                <% else %>
+                  <p>No image available</p>
+                <% end %>
+
+                <div class="card-body">
+                  <h4 class="card-title font-michroma"><%= post.fields[:title] %></h4>
+                  <%# <h4 class="card-title font-michroma"><%= post.fields[:date].strftime("%B %d, %Y") %>
+                </div>
+              </div>
+            </a>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <%= paginate @posts %>
+    </div>
+  </section>
+</div>
