@@ -19,6 +19,7 @@ document.addEventListener('turbo:load', function() {
   }
 });
 
+
 const observerOptions = {
   root: null,
   rootMargin: '0px',
@@ -26,19 +27,11 @@ const observerOptions = {
 };
 
 function applyStylesForSection(section) {
-  navbar.classList.remove('navbar-transparent', 'navbar-dark-green', 'navbar-light-pink', 'navbar-light-cream');
-
   if (section.id === "section1" && section.classList.contains('image-bg')) {
-      navbar.classList.add('navbar-transparent');
-  } else if (section.id === "section2" || section.id === "section5") {
-      navbar.classList.add('navbar-dark-green');
-  } else if (section.id === "section3") {
-      console.log(window.getComputedStyle(navbar).backgroundColor);
-      navbar.classList.add('navbar-light-pink');
-  } else if (section.id === "section4" || section.id === "section6") {
-      navbar.classList.add('navbar-light-cream');
-  } else {
-      console.warn('No matching section ID or color class for this section:', section);
+    navbar.style.backgroundColor = 'transparent';
+    navbar.style.boxShadow = "none"
+  } else if (section.classList.contains('color-bg')) {
+    navbar.style.backgroundColor = window.getComputedStyle(section).backgroundColor;
   }
 
   navbarText.forEach(link => {
