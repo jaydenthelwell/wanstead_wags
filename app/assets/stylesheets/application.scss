@@ -21,6 +21,22 @@ $pink: hsla(294.17,100%,79.8%,1);
 
 @import "bootstrap";
 @import "font-awesome";
+.navbar-transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.navbar-dark-green {
+  background-color: #011712 !important;
+}
+
+.navbar-light-pink {
+  background-color: #F4CEE2 !important;
+}
+
+.navbar-light-cream {
+  background-color: #EFEDE7 !important;
+}
 
 
 body {
