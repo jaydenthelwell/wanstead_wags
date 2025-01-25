@@ -33,6 +33,7 @@ function applyStylesForSection(section) {
   } else if (section.id === "section2" || section.id === "section5") {
       navbar.classList.add('navbar-dark-green');
   } else if (section.id === "section3") {
+      console.log(window.getComputedStyle(navbar).backgroundColor);
       navbar.classList.add('navbar-light-pink');
   } else if (section.id === "section4" || section.id === "section6") {
       navbar.classList.add('navbar-light-cream');
