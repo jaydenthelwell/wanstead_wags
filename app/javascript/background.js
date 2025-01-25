@@ -31,7 +31,7 @@ function applyStylesForSection(section) {
     navbar.style.backgroundColor = 'transparent';
     navbar.style.boxShadow = "none"
   } else if (section.classList.contains('color-bg')) {
-    navbar.style.backgroundColor = window.getComputedStyle(section).backgroundColor;
+    navbar.style.backgroundColor = window.getComputedStyle(section).backgroundColor + " !important";
   }
 
   navbarText.forEach(link => {
