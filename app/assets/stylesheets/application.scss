@@ -461,6 +461,10 @@ h4, .h4 {
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
+  .blog-title-signoff {
+    width: 100%;
+  }
+
   .blogs-row {
     padding-bottom: 30px;
   }
@@ -475,7 +479,7 @@ h4, .h4 {
   }
 
   .filter-button {
-    padding: 0 10px;
+    padding: 15px;
   }
 
   .filter-button a {
@@ -508,7 +512,6 @@ h4, .h4 {
   .blog-title {
     font-size: 50px;
     margin-bottom: 30px;
-    text-align: center;
   }
 
   .blog-section {
@@ -746,6 +749,10 @@ h4, .h4 {
 
   .welcome-message {
     margin-bottom: 20px;
+  }
+
+  .form-container {
+    padding: 50px;
   }
 
   .font {
