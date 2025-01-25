@@ -53,8 +53,8 @@
   <%# </section> %>
 
   <section id="section4" class="color-bg blog-section-content" style="background-color: #EFEDE7;">
-    <div class="sticky">
-      <h1 class="font-abril">TABLE OF CONTENTS</h1>
+    <div class="sticky table-of-contents">
+      <h1 class="font-abril contents-title">TABLE OF CONTENTS</h1>
       <ul>
         <% @post.fields[:table_of_contents].each do |post| %>
         <li class="green-text font-michroma"><%= post %></li>
