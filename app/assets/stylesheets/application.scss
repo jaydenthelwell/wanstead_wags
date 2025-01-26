@@ -68,7 +68,7 @@ body {
 }
 
 .font {
-  font-family: "Michroma", sans-serif;
+  font-family: "Lato", serif, sans-serif;
   font-style: normal;
   text-decoration: none;
   color: #EFEDE7;
@@ -78,32 +78,35 @@ body {
 }
 
 .services-text {
-  font-family: "Michroma", sans-serif;
+  font-family: "Lato", serif, sans-serif;
   font-style: normal;
   text-decoration: none;
   color: #EFEDE7;
   letter-spacing: 0px;
   font-size: 21px;
   line-height: 30px;
+  font-weight: 300;
 }
 
 .text {
-  font-family: "Michroma", sans-serif;
+  font-family: "Lato", serif, sans-serif;
   font-style: normal;
   text-decoration: none;
   color: #EFEDE7;
   letter-spacing: 1px;
   font-size: 14px;
+  font-weight: 300;
 }
 
 .green-text {
-  font-family: "Michroma", sans-serif;
+  font-family: "Lato", serif, sans-serif;
   font-style: normal;
   text-decoration: none;
   color: #032B22;
   letter-spacing: 1px;
   font-size: 14px;
   line-height: 30px;
+  font-weight: 300;
 }
 
 .width-85 {
@@ -164,13 +167,14 @@ body {
 }
 
 .caption-two {
-  font-family: "Michroma", sans-serif;
+  font-family: "Lato", serif, sans-serif;
   font-style: normal;
   text-decoration: none;
   color: #032B22;
   letter-spacing: 1px;
   font-size: 16px;
   line-height: 40px;
+  font-weight: 300;
 }
 
 .footer {
@@ -214,7 +218,8 @@ body {
 }
 
 .michroma {
-  font-family: "Michroma", sans-serif;
+  font-family: "Lato", serif, sans-serif;
+  font-weight: 300;
 }
 
 .wanstead-wags  {
@@ -269,7 +274,7 @@ body {
 .button {
   display: inline-block;
   align-self: center;
-  font-family: "Michroma", sans-serif;
+  font-family: "Lato", serif, sans-serif;
   font-style: normal;
   text-decoration: none;
   letter-spacing: 1px;
@@ -383,7 +388,7 @@ body {
 }
 
 .ab-caption {
-  font-family: "Michroma", sans-serif;
+  font-family: "Lato", serif, sans-serif;
   font-style: normal;
   text-decoration: none;
   color: #032B22;
@@ -582,7 +587,7 @@ h4, .h4 {
   }
 
   .blog-background {
-    padding: 55px 0 55px 0px;
+    padding: 55px 10px 55px 10px;
   }
 
   .width-85 {
@@ -689,8 +694,7 @@ h4, .h4 {
   }
 
   .doggy-picture img {
-    width: 80%; /* Adjust the image size to fit smaller screens */
-    max-width: 300px; /* Set a maximum width for large phones */
+    width: 100%; /* Adjust the image size to fit smaller screens */
     height: auto; /* Maintain aspect ratio */
   }
 
@@ -1197,7 +1201,7 @@ h4, .h4 {
 
 @media only screen and (min-width: 768px) and (max-width: 1366px) {
   .form-container {
-    font-family: "Michroma";
+    font-family: "Lato", serif;
     padding: 30px;
   }
 
@@ -1451,7 +1455,7 @@ h4, .h4 {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)  and (orientation: portrait) {
   .form-container {
-    font-family: "Michroma";
+    font-family: "Lato", serif;
     padding: 60px;
   }
 
