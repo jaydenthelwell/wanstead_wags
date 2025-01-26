@@ -115,7 +115,7 @@ body {
 }
 
 .services-font {
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .services-description {
@@ -351,7 +351,7 @@ font-family: "Lato", serif, sans-serif !important;
 .services {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
   margin-top: 20px;
   padding: 50px 20px;
@@ -1294,7 +1294,7 @@ h4, .h4 {
   }
 
   .navbar-text {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .prices-div {
