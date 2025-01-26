@@ -23,7 +23,7 @@ document.addEventListener('turbo:load', function() {
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.55
+  threshold: 0.50
 };
 
 function applyStylesForSection(section) {
