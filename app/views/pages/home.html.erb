@@ -56,6 +56,15 @@
             <p class="text services-description services-font services-text">A 45-minute run (6-8km) plus 30 minutes of brain games and training to burn off energy and keep your dog sharp and happy.</p>
           </div>
         </div>
+        <div class="d-flex align-items-center services-flex">
+          <div class="service-image-flex">
+            <%= image_tag "pet_sitting.png", alt: "Photo of a dog sitting on the living room floor", class: "services-images" %>
+          </div>
+          <div class="d-flex flex-column align-items-center services-paragraph">
+            <h1 class="text services-description service-name">Dog Sits</h1>
+            <p class="text services-description services-font services-text">Flexible dog sitting for visits or longer stays – personalized care and comfort for your dog while you're away.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -85,44 +94,36 @@
     </div>
   </section>
 
-<section id="section5" class="color-bg" style="background-color: #011712;">
-  <div class="blog-background">
-    <h1 class="welcome wanstead-wags-title titles d-flex justify-content-center" style="color: #40FFB5;">Blogs About Dogs</h1>
-    <div id="blogCarousel" class="carousel slide container mt-4" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <% @posts.each_with_index do |post, index| %>
-          <div class="carousel-item <%= 'active' if index == 0 %>">
-            <a href="<%= blogs_post_path(post.fields[:slug]) %>" class="post-link">
-              <div class="d-flex flex-column align-items-center">
-                <% if post.fields[:blog_image].present? %>
-                  <% image_url = "https:" + post.fields[:blog_image].url %>
-                  <%= image_tag image_url, alt: "Photo of a dog walking in the woods on their own.", class: "blog-images" %>
-                <% else %>
-                  <p>No image available</p>
-                <% end %>
-                <div class="post-description text-center mt-3">
-                  <p class="text blogs-description"><%= post.fields[:title] %></p>
-                  <p class="text blog-text"><%= post.fields[:description] %></p>
-                </div>
+  <section id="section5" class="color-bg" style="background-color: #011712;">
+    <div class="blog-background">
+      <h1 class="welcome wanstead-wags-title titles d-flex justify-content-center" style="color: #40FFB5;">Blogs About Dogs</h1>
+      <div class="blog-posts container mt-4">
+        <div class="row">
+          <% @posts.each_with_index do |post, index| %>
+            <% if index < 3 %>
+              <div class="col-md-4 mb-4">
+                <a href="<%= blogs_post_path(post.fields[:slug]) %>" class="post-link">
+                  <div class="d-flex flex-column align-items-center">
+                    <% if post.fields[:blog_image].present? %>
+                      <% image_url = "https:" + post.fields[:blog_image].url %>
+                      <%= image_tag image_url, alt: "Photo of a dog walking in the woods on their own.", class: "blog-images" %>
+                    <% else %>
+                      <p>No image available</p>
+                    <% end %>
+                    <div class="post-description">
+                      <p class="text blogs-description"><%= post.fields[:title] %></p>
+                      <p class="text blog-text text-center"><%= post.fields[:description] %></p>
+                    </div>
+                  </div>
+                </a>
               </div>
-            </a>
-          </div>
-        <% end %>
+            <% end %>
+          <% end %>
+        </div>
       </div>
-      <!-- Carousel controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <%= link_to("VIEW ALL", blogs_path, class:"view-all-link") %>
     </div>
-    <%= link_to("VIEW ALL", blogs_path, class: "view-all-link mt-4 d-block text-center") %>
-  </div>
-</section>
-
+  </section>
 
   <section id="section6" class="color-bg" style="background-color: #EFEDE7;">
     <div class="how-to-book">
