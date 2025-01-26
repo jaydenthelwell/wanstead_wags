@@ -72,7 +72,6 @@ font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #EFEDE7;
-  letter-spacing: 2px;
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -82,7 +81,6 @@ font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #EFEDE7;
-  letter-spacing: 0px;
   font-size: 21px;
   line-height: 30px;
   font-weight: 300;
@@ -93,7 +91,6 @@ font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #EFEDE7;
-  letter-spacing: 1px;
   font-size: 14px;
   font-weight: 300;
 }
@@ -103,7 +100,6 @@ font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #032B22;
-  letter-spacing: 1px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 300;
@@ -146,9 +142,6 @@ font-family: "Lato", serif, sans-serif !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.letter-spacing-5 {
-  letter-spacing: 5px;
-}
 
 .background-picture {
   height: 95vh;
@@ -171,7 +164,6 @@ font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #032B22;
-  letter-spacing: 1px;
   font-size: 16px;
   line-height: 40px;
   font-weight: 300;
@@ -190,7 +182,6 @@ font-family: "Lato", serif, sans-serif !important;
 .footer-titles {
   color: #EFEDE7;
   font-size: 14px;
-  letter-spacing: 1px;
   text-decoration: underline;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -276,7 +267,6 @@ font-family: "Lato", serif, sans-serif !important;
 font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
-  letter-spacing: 1px;
   font-size: 2rem;
   color: black;
   padding: 20px;
@@ -387,11 +377,10 @@ font-family: "Lato", serif, sans-serif !important;
 }
 
 .ab-caption {
-font-family: "Lato", serif, sans-serif !important;
+  font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #032B22;
-  letter-spacing: 2px;
   font-size: 16px;
   line-height: 40px;
 }
@@ -802,7 +791,6 @@ h4, .h4 {
 
   .font {
     font-size: 16px;
-    letter-spacing: 1px;
     padding: 0 30px;
   }
 
@@ -1125,7 +1113,7 @@ h4, .h4 {
 
   .font {
     font-size: 14px;
-    letter-spacing: 1px;
+    1px;
   }
 
   .button {
