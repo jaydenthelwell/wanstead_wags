@@ -701,7 +701,7 @@ h4, .h4 {
     margin-left: 0px;
   }
 
-  .about-me-photo img {
+  .-photo img {
     width: 80%; /* Adjust the image size to fit smaller screens */
     max-width: 300px; /* Set a maximum width for large phones */
     height: auto; /* Maintain aspect ratio */
@@ -1018,9 +1018,8 @@ h4, .h4 {
     margin-left: 0px;
   }
 
-  .about-me-photo img {
-    width: 80%; /* Adjust the image size to fit smaller screens */
-    max-width: 300px; /* Set a maximum width for large phones */
+  .-photo img {
+    width: 100%; /* Adjust the image size to fit smaller screens */
     height: auto; /* Maintain aspect ratio */
   }
 
