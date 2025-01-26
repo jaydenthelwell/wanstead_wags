@@ -74,6 +74,7 @@ font-family: "Lato", serif, sans-serif !important;
   color: #EFEDE7;
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 300;
 }
 
 .services-text {
@@ -114,7 +115,7 @@ font-family: "Lato", serif, sans-serif !important;
 }
 
 .services-font {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .services-description {
@@ -253,7 +254,7 @@ font-family: "Lato", serif, sans-serif !important;
 
 .ww-home-services {
   width: 65%;
-  font-size: 1rem;
+  font-size: 18px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -281,10 +282,6 @@ font-family: "abril", serif!important;
 
 .titles {
   font-size: 50px;
-}
-
-.welcome {
-  padding: 100px 0 50px 0;
 }
 
 .welcome-message {
@@ -325,7 +322,6 @@ font-family: "abril", serif!important;
   align-items: center;
   text-align: center;
   flex: 1;
-  margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -782,10 +778,6 @@ h4, .h4 {
     width: 100%;
   }
 
-  .welcome-message {
-    margin-bottom: 20px;
-  }
-
   .form-container {
     padding: 20px;
   }
@@ -1108,9 +1100,6 @@ h4, .h4 {
     justify-content: end;
   }
 
-  .welcome-message {
-    margin-bottom: 20px;
-  }
 
   .font {
     font-size: 14px;
@@ -1229,7 +1218,7 @@ h4, .h4 {
   }
 
   .ww-home-services {
-    font-size: 0.7rem;
+    font-size: 18px;
   }
 
   .footer-spacing  {
@@ -1253,7 +1242,6 @@ h4, .h4 {
 
   .welcome-message {
     width: 70%;
-    margin-bottom: 60px;
   }
 
   .padding-text {
@@ -1362,10 +1350,6 @@ h4, .h4 {
     padding: 0rem 0rem 10rem 0rem;
   }
 
-  .welcome {
-    padding: 100px 0 80px 0;
-  }
-
   .prices-div {
     padding: 70px 30px;
   }
@@ -1398,9 +1382,6 @@ h4, .h4 {
     gap: 6rem;
   }
 
-  .welcome {
-    padding: 50px 0 80px 0;
-  }
 
   .steps {
     margin: 0;
@@ -1423,7 +1404,7 @@ h4, .h4 {
   }
 
   .ww-home-services {
-    font-size: 0.7rem;
+    font-size: 18px;
   }
 
   .steps {
@@ -1491,7 +1472,6 @@ h4, .h4 {
 
   .welcome-message {
     width: 70%;
-    margin-bottom: 60px;
   }
 
   .padding-text {
@@ -1589,10 +1569,6 @@ h4, .h4 {
     max-width: 350px;
   }
 
-  .welcome {
-    padding: 100px 0 80px 0;
-  }
-
   .prices-div {
     padding: 70px 30px;
   }
@@ -1607,9 +1583,6 @@ h4, .h4 {
     gap: 6rem;
   }
 
-  .welcome {
-    padding: 50px 0 80px 0;
-  }
 
   .steps {
     margin: 0;
@@ -1632,7 +1605,7 @@ h4, .h4 {
   }
 
   .ww-home-services {
-    font-size: 0.7rem;
+    font-size: 18px;
   }
 
   .steps {
