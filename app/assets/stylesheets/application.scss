@@ -73,7 +73,7 @@ body {
   text-decoration: none;
   color: #EFEDE7;
   font-size: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 10px black;
   font-weight: 300;
 }
 
@@ -140,7 +140,7 @@ body {
   text-align: center;
   color: #40FFB5;
   padding: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 10px black;
 }
 
 
@@ -184,7 +184,7 @@ font-family: "Lato", serif, sans-serif !important;
   color: #EFEDE7;
   font-size: 14px;
   text-decoration: underline;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 10px black;
 }
 
 .footer-spacing  {
@@ -197,7 +197,7 @@ font-family: "Lato", serif, sans-serif !important;
   color: #efede7d4;
   font-size: 14px;
   width: max-content;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 10px black;
 }
 
 .doggy-picture {
@@ -255,7 +255,7 @@ font-family: "Lato", serif, sans-serif !important;
 .ww-home-services {
   width: 65%;
   font-size: 18px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 10px black;
 }
 
 .ww-home-text {
@@ -265,7 +265,7 @@ font-family: "Lato", serif, sans-serif !important;
 .button {
   display: inline-block;
   align-self: center;
-font-family: "abril", serif!important;
+  font-family: "abril", serif!important;
   font-style: normal;
   text-decoration: none;
   font-size: 2rem;
@@ -275,7 +275,7 @@ font-family: "abril", serif!important;
   border-color: #40FFB5 !important;
   border: solid;
   border-width: 1px;
-  font-size: 15px;
+  font-size: 20px;
   border-radius: 10px;
   margin-top: 200px;
 }
@@ -322,7 +322,7 @@ font-family: "abril", serif!important;
   align-items: center;
   text-align: center;
   flex: 1;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 10px black;
 }
 
 .welcome-to-photo {
@@ -409,7 +409,7 @@ font-family: "abril", serif!important;
   align-items: center;
   text-align: center;
   max-width: 400px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 10px black;
 }
 
 .blog-images {
@@ -424,7 +424,7 @@ font-family: "abril", serif!important;
   max-width: 400px;
   margin: 0;
   line-height: 30px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 10px black;
 }
 
 .logo-footer {
@@ -1214,7 +1214,7 @@ h4, .h4 {
   }
 
   .wanstead-wags-title {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   .ww-home-services {
