@@ -68,7 +68,7 @@ body {
 }
 
 .font {
-  font-family: "Lato", serif, sans-serif;
+font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #EFEDE7;
@@ -78,7 +78,7 @@ body {
 }
 
 .services-text {
-  font-family: "Lato", serif, sans-serif;
+font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #EFEDE7;
@@ -89,7 +89,7 @@ body {
 }
 
 .text {
-  font-family: "Lato", serif, sans-serif;
+font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #EFEDE7;
@@ -99,7 +99,7 @@ body {
 }
 
 .green-text {
-  font-family: "Lato", serif, sans-serif;
+font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #032B22;
@@ -167,7 +167,7 @@ body {
 }
 
 .caption-two {
-  font-family: "Lato", serif, sans-serif;
+font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #032B22;
@@ -218,7 +218,7 @@ body {
 }
 
 .michroma {
-  font-family: "Lato", serif, sans-serif;
+  font-family: "Lato", serif, sans-serif !important;
   font-weight: 300;
 }
 
@@ -227,8 +227,8 @@ body {
 }
 
 .wanstead-wags-title {
-  font-family: "Abril Fatface", serif;
-  font-optical-sizing: auto;
+  font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
     "SOFT" 0,
@@ -274,7 +274,7 @@ body {
 .button {
   display: inline-block;
   align-self: center;
-  font-family: "Lato", serif, sans-serif;
+font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   letter-spacing: 1px;
@@ -388,7 +388,7 @@ body {
 }
 
 .ab-caption {
-  font-family: "Lato", serif, sans-serif;
+font-family: "Lato", serif, sans-serif !important;
   font-style: normal;
   text-decoration: none;
   color: #032B22;
@@ -459,7 +459,7 @@ p {
 
 .view-all-link {
   padding-top: 0rem;
-  font-family: 'Michroma';
+  font-family: "Lato", serif, sans-serif !important;
   color: rgb(64, 255, 181);
   line-height: 30px;
   border-bottom: 1px solid rgb(64, 255, 181);
@@ -1201,7 +1201,7 @@ h4, .h4 {
 
 @media only screen and (min-width: 768px) and (max-width: 1366px) {
   .form-container {
-    font-family: "Lato", serif;
+  font-family: "Lato", serif, sans-serif !important;
     padding: 30px;
   }
 
@@ -1455,7 +1455,7 @@ h4, .h4 {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)  and (orientation: portrait) {
   .form-container {
-    font-family: "Lato", serif;
+  font-family: "Lato", serif, sans-serif !important;
     padding: 60px;
   }
 

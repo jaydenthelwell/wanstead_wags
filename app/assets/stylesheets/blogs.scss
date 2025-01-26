@@ -54,7 +54,7 @@
 }
 
 .font-michroma {
-  font-family: "Lato", serif, sans-serif;
+  font-family: "Lato", serif, sans-serif !important;
 }
 
 .title-blog-section {
@@ -101,7 +101,7 @@
 
 .sign-off {
   color: #F4CEE2;
-  font-family: 'Michroma';
+  font-family: "Lato", serif, sans-serif !important;
   font-size: 15px;
   letter-spacing: 2px;
 }
@@ -134,7 +134,7 @@
   text-decoration: none;
   color: #F4CEE2!important;
   transition: color 0.3s;
-  font-family: 'Michroma';
+  font-family: "Lato", serif, sans-serif !important;
 }
 
 .breadcrumb-item.active {
