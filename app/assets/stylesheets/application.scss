@@ -21,6 +21,15 @@ $pink: hsla(294.17,100%,79.8%,1);
 
 @import "bootstrap";
 @import "font-awesome";
+
+table {
+  background-color: transparent;
+}
+
+html {
+  background-color: $light;
+}
+
 .navbar-transparent {
   background-color: transparent !important;
   box-shadow: none !important;
