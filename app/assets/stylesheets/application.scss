@@ -1439,7 +1439,7 @@ h4, .h4 {
   .green-background {
     align-items: center;
     flex-direction: column;
-    padding: 0;
+    padding: 60px 0;
   }
 
   .photo-two {
@@ -1570,7 +1570,7 @@ h4, .h4 {
   }
 
   .prices-div {
-    padding: 100px 20px;
+    padding: 100px 50px;
   }
 
   .services-paragraph {
@@ -1596,5 +1596,16 @@ h4, .h4 {
   .photo-three {
     max-width: 60%;
     padding-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .doggy-picture {
+    width: 30%;
+    margin: 0;
+  }
+
+  .how-to-book {
+    padding: 50px;
   }
 }
