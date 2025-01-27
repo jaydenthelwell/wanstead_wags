@@ -312,7 +312,7 @@ body {
 .green-background {
   display: flex;
   justify-content: space-between;
-  padding: 100px;
+  padding: 40px;
   flex-wrap: wrap;
   width: 100%;
   background-color: #011712;
@@ -1300,7 +1300,6 @@ h4, .h4 {
   }
 
   .green-background {
-    padding: 100px;
     align-items: initial;
     flex-direction: initial;
   }
@@ -1438,7 +1437,6 @@ h4, .h4 {
 
   .green-background {
     align-items: center;
-    flex-direction: column;
     padding: 60px 0;
   }
 
@@ -1521,6 +1519,16 @@ h4, .h4 {
 
   .green-background {
     padding: 0;
+    align-items: center;
+    flex-direction: initial;
+  }
+
+  .welcome-section {
+    gap: 40px;
+  }
+
+  .wanstead-wags-title {
+    font-size: 3rem;
   }
 
   .how-to-book {
@@ -1594,7 +1602,6 @@ h4, .h4 {
   }
 
   .photo-three {
-    max-width: 60%;
     padding-top: 70px;
   }
 }
