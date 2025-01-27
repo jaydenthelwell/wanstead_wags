@@ -46,7 +46,7 @@
   <%# <section id="section3" class="color-bg" style="background-color: #F4CEE2;"> %>
   <div class="blog-section">
     <div class="blog-intro d-flex flex-column">
-      <h1 class="font-Abril Fatface title-blog-section">WHAT TO EXPECT</h1>
+      <h1 class="font-Abril title-blog-section">WHAT TO EXPECT</h1>
       <p class="font-michroma pt-4 blog-intro-text"><%= @post.fields[:description] %></p>
     </div>
   </div>
@@ -54,7 +54,7 @@
 
   <section id="section4" class="color-bg blog-section-content" style="background-color: #EFEDE7;">
     <div class="sticky table-of-contents">
-      <h1 class="font-Abril Fatface contents-title">TABLE OF CONTENTS</h1>
+      <h1 class="font-Abril contents-title">TABLE OF CONTENTS</h1>
       <ul>
         <% @post.fields[:table_of_contents].each do |post| %>
         <li class="green-text font-michroma"><%= post %></li>
