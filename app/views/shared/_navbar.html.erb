@@ -37,6 +37,12 @@
               document.querySelector(".openbtn").style.opacity = "1";
               document.querySelector(".alerts").style.opacity = "1";
             }
+
+            window.onload = function() {
+              if (localStorage.getItem('sidebar-open') === 'true') {
+                closeNav();
+              }
+            }
           </script>
         </div>
       </div>
